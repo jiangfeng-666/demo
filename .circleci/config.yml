@@ -29,3 +29,8 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hello
+  pr-checks:
+    jobs:
+      - h10p-phpcs-review/symfony-security-check:
+          name: Symfony Security Check
+          composer-lock-file: ./composer.lock
