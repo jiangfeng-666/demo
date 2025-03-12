@@ -60,5 +60,5 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hello
-      - say-yeah
-#      - say-what
+#      - say-yeah
+      - say-what
